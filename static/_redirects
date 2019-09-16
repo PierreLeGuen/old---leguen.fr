@@ -1,0 +1,5 @@
+# Redirect default Netlify subdomain to primary domain
+https://leguen.netlify.com/* https://leguen.fr/:splat 301!
+/g https://github.com/pierreleguen 301
+/t https://twitter.com/Pierre_Le_Guen 301
+/l https://www.linkedin.com/in/pierreleguen 301
