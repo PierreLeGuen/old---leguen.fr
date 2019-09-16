@@ -4,7 +4,7 @@ module.exports = {
     subtitle: 'Student, Freelancer & Software Developer',
     description: `Hi, I'm Pierre Le Guen, I am passionate about ....`,
     siteUrl: 'https://leguen.fr',
-    disqusShortname: 'pierreleguen',
+    disqusShortname: 'leguen',
     social: [
       { title: 'Github', link: 'https://github.com/pierreleguen', icon: 'github' },
       { title: 'Twitter', link: 'https://twitter.com/Pierre_Le_Guen', icon: 'twitter' },

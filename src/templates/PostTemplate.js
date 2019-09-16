@@ -3,7 +3,6 @@ import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 import React from 'react'
 import Markdown from '../components/Markdown'
 import PostHeader from '../components/PostHeader'
-import SubscribeForm from '../components/SubscribeForm'
 import { getLinkEditPost } from '../utils'
 import Layout from './TemplateLayout'
 
@@ -39,7 +38,6 @@ export default class BlogPostTemplate extends React.Component {
           editLink={getLinkEditPost(post.fileAbsolutePath)}
           avatar={this.props.data.avatar}
         />
-        <SubscribeForm />
       </Layout>
     )
   }
