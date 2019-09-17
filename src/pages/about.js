@@ -1,13 +1,13 @@
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 import get from 'lodash/get'
 import React from 'react'
 import AllSocial from '../components/About/AllSocial'
 import Header from '../components/Header'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import ContactSocial from '../components/ContactSocial'
-import Stack from '../components/Stack'
+// import ContactSocial from '../components/ContactSocial'
+// import Stack from '../components/Stack'
 import { pages } from '../utils'
 
 class About extends React.Component {
