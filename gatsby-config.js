@@ -6,7 +6,7 @@ module.exports = {
   ...aboutData,
   mapping: {
     'MarkdownRemark.frontmatter.author': `AuthorYaml`,
-    'Mdx.frontmatter.author': `AuthorYaml`,
+    'Mdx.frontmatter.author': `AuthorYaml`
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -27,30 +27,6 @@ module.exports = {
       }
     },
     {
-      // All images from assets folder. For use in website.
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'img',
-        path: `${__dirname}/src/assets/images`
-      }
-    },
-    {
-      // All images for Markdown pages. For use in generated posts, projects.
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'img',
-        path: `${__dirname}/static/img/`
-      }
-    },
-    {
-      // Markdown pages: posts and projects folder
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'pages',
-        path: `${__dirname}/src/pages/`
-      }
-    },
-    {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography.js'
@@ -59,35 +35,49 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-mdx`
-    },
-    {
-      resolve: 'gatsby-transformer-remark',
+      resolve: 'gatsby-plugin-mdx',
       options: {
-        plugins: [
-          `gatsby-remark-embed-video`,
+        extensions: ['.md', '.mdx'],
+        gatsbyRemarkPlugins: [
+          'gatsby-remark-embed-video',
           {
             resolve: 'gatsby-remark-code-titles',
             options: {
-              className: 'gatsby-remark-code-title',
-            },
+              className: 'gatsby-remark-code-title'
+            }
           },
           {
-            resolve: "gatsby-remark-embed-gist",
+            resolve: 'gatsby-remark-embed-gist',
             options: {
-              username: 'pierreleguen',
+              username: 'dantehemerson',
               includeDefaultCss: true
+            }
+          },
+          {
+            resolve: `gatsby-remark-classes`,
+            options: {
+              classMap: {
+                h1: 'md-h1',
+                h2: 'md-h2',
+                h3: 'md-h3',
+                h4: 'md-h4',
+                h5: 'md-h5',
+                h6: 'md-h6',
+                paragraph: 'md-p'
+              }
             }
           },
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
-              sizeByPixelDensity: true,
-              quality: 90,
+              maxWidth: 2000,
+              quality: 100,
               showCaptions: true,
-              linkImagesToOriginal: true
+              linkImagesToOriginal: false
             }
+          },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -95,27 +85,71 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`
             }
           },
+          'gatsby-remark-prismjs',
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
-              offsetY: `75`
-            }
-          },
-          {
-            resolve: 'gatsby-remark-emojis',
-            options: {
-              active: true,
-              class: 'emoji-icon',
-              size: 64,
-              styles: {
-                display: 'inline',
-                margin: '0',
-                position: 'relative'
-              }
+              offsetY: `80`
             }
           },
           'gatsby-remark-external-links',
+          'gatsby-remark-smartypants'
+        ],
+        plugins: [
+          'gatsby-remark-embed-video',
+          {
+            resolve: 'gatsby-remark-code-titles',
+            options: {
+              className: 'gatsby-remark-code-title'
+            }
+          },
+          {
+            resolve: 'gatsby-remark-embed-gist',
+            options: {
+              username: 'dantehemerson',
+              includeDefaultCss: true
+            }
+          },
+          {
+            resolve: `gatsby-remark-classes`,
+            options: {
+              classMap: {
+                h1: 'md-h1',
+                h2: 'md-h2',
+                h3: 'md-h3',
+                h4: 'md-h4',
+                h5: 'md-h5',
+                h6: 'md-h6',
+                paragraph: 'md-p'
+              }
+            }
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 2000,
+              quality: 100,
+              showCaptions: true,
+              linkImagesToOriginal: false
+            }
+          },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`
+            }
+          },
           'gatsby-remark-prismjs',
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: `80`
+            }
+          },
+          'gatsby-remark-external-links',
           'gatsby-remark-smartypants'
         ]
       }
@@ -130,8 +164,8 @@ module.exports = {
         head: false,
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: 'leguen.fr',
-        cookieName: 'gaLeGuen',
+        cookieDomain: 'dantecalderon.dev',
+        cookieName: 'gaDanteCalderon',
         cookieExpires: 86400
       }
     },
@@ -161,12 +195,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Pierre Le Guen',
-        short_name: 'Pierre LG',
+        name: 'Dante Calderón',
+        short_name: 'Dante C.',
         start_url: '/',
-        background_color: '#1976d2',
-        theme_color: '#1976d2',
-        display: 'minimal-ui'
+        icon: 'src/assets/images/logo.png',
+        background_color: '#E1524A',
+        theme_color: '#000',
+        display: 'standalone'
       }
     }
   ]

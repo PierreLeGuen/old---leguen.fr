@@ -1,17 +1,47 @@
 module.exports = {
   siteMetadata: {
-    title: 'Pierre Le Guen',
-    subtitle: 'Student, Freelancer & Software Developer',
-    description: `Hi, I'm Pierre Le Guen, I am passionate about ....`,
-    siteUrl: 'https://leguen.fr',
-    disqusShortname: 'leguen',
+    title: 'Dante Calderón',
+    subtitle: 'Javascript / Node.js Developer',
+    description: `Hi, I'm Dante Calderón, I am passionate about Nodejs.`,
+    siteUrl: 'https://dantecalderon.dev',
+    disqusShortname: 'dantecalderon',
     social: [
-      { title: 'Github', link: 'https://github.com/pierreleguen', icon: 'github' },
-      { title: 'Twitter', link: 'https://twitter.com/Pierre_Le_Guen', icon: 'twitter' },
-      { title: 'Linkedin', link: 'https://linkedin.com/in/pierreleguen', icon: 'linkedin' },
-      //{ title: 'Medium', link: 'https://medium.com/@pierreeguen', icon: 'medium' },
-      { title: 'Gitlab', link: 'https://gitlab.com/pleguen', icon: 'gitlab' }
+      { title: 'Github', link: 'https://github.com/dantehemerson', icon: 'github' },
+      { title: 'Twitter', link: 'https://twitter.com/dantehemerson', icon: 'twitter' },
+      { title: 'Linkedin', link: 'https://linkedin.com/in/dantehemerson', icon: 'linkedin' },
+      { title: 'Medium', link: 'https://medium.com/@dantehemerson', icon: 'medium' },
+      //{ title: 'Dev', link: 'https://dev.to/dantehemerson',  icon: 'dev' },
+      { title: 'Dev', link: 'https://instagram.com/dantehemerson', icon: 'dev' },
+      {
+        title: 'StackOverflow',
+        link: 'https://instagram.com/dantehemerson',
+        icon: 'stack-overflow'
+      },
+      { title: 'Goodreads', link: 'https://instagram.com/dantehemerson', icon: 'instagram' },
+      {
+        title: 'FreeCodeCamp',
+        link: 'https://instagram.com/dantehemerson',
+        icon: 'free-code-camp'
+      },
+      { title: 'Gitlab', link: 'https://instagram.com/dantehemerson', icon: 'gitlab' },
+      { title: 'Angellist', link: 'https://angel.co/dantehemerson', icon: 'angellist' },
+      { title: 'Codepen', link: 'https://codepen.io/dantehemerson', icon: 'codepen' },
+      { title: 'Meetup', link: 'https://www.meetup.com/es/members/256853185/', icon: 'meetup' },
+      { title: 'Pinterest', link: 'https://www.pinterest.com/dantehemerson/', icon: 'pinterest' },
+      { title: 'Steam', link: 'https://steamcommunity.com/id/dantehemerson/', icon: 'steam' },
+      { title: 'Twitch', link: 'https://www.twitch.tv/dantehemerson', icon: 'twitch' },
+      {
+        title: 'Youtube',
+        link: 'https://www.youtube.com/channel/UCCbtGSRgh1RFYysgaZkoE0A',
+        icon: 'youtube-play'
+      }
     ],
+    socials: {
+      github: 'https://github.com/dantehemerson',
+      twitter: 'https://twitter.com/dantehemerson',
+      linkedin: 'https://linkedin.com/in/dantehemerson',
+      instagram: 'https://instagram.com/dantehemerson'
+    },
     menu: [
       { title: 'Home', id: '', to: '/', icon: 'home' },
       { title: 'Blog', id: 'Blog', to: '/blog', icon: 'home' },
