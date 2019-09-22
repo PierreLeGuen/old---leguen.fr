@@ -3,41 +3,43 @@ import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 import React from 'react'
 import Markdown from '../components/Markdown'
 import PostHeader from '../components/PostHeader'
+import Share from '../components/Share'
+import SubscribeForm from '../components/SubscribeForm'
+import TagsSection from '../components/TagsSection'
 import { getLinkEditPost } from '../utils'
 import Layout from './TemplateLayout'
 
-export const Post = props => {
-  return (
-    <div>
-      <PostHeader
-        title={props.frontmatter.title}
-        image={props.image}
-        editLink={props.editLink}
-        date={props.frontmatter.date}
-        timeToRead={props.timeToRead ? props.timeToRead : '3'}
-        avatar={props.avatar}
-      />
-      <Markdown content={props.content} />
-    </div>
-  )
-}
+export const PostContent = ({ title, image, editLink, date, timeToRead, avatar, content }) => (
+  <React.Fragment>
+    <PostHeader title={title} image={image} editLink={editLink} date={date} timeToRead={timeToRead} avatar={avatar} />
+    <Markdown content={content} />
+  </React.Fragment>
+)
 
 export default class BlogPostTemplate extends React.Component {
   render() {
-    console.log(this.props)
-    const post = this.props.data.markdownRemark
-    const { siteMetadata } = this.props.data.site
-    const { title, thumbnail, description } = post.frontmatter
+    const {
+      timeToRead,
+      body,
+      fileAbsolutePath,
+      fields: { slug },
+      frontmatter: { title, image, date, description, tags }
+    } = this.props.data.mdx
+
     return (
-      <Layout isPost title={title} path={post.fields.slug} image={thumbnail} description={description}>
-        <Post
-          {...post}
-          {...siteMetadata}
-          content={post.html}
-          image={post.fields.image.childImageSharp.sizes}
-          editLink={getLinkEditPost(post.fileAbsolutePath)}
+      <Layout isPost title={title} path={slug} image={`thumbnail`} description={description}>
+        <PostContent
+          title={title}
+          image={image}
+          editLink={getLinkEditPost(fileAbsolutePath)}
+          date={date}
+          timeToRead={timeToRead}
           avatar={this.props.data.avatar}
+          content={body}
         />
+        <TagsSection tags={tags} />
+        <Share title={title} path={slug} />
+        <SubscribeForm />
       </Layout>
     )
   }
@@ -56,10 +58,9 @@ export const pageQuery = graphql`
         siteUrl
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
-      html
-      htmlAst
+      body
       timeToRead
       fileAbsolutePath
       frontmatter {
@@ -67,12 +68,6 @@ export const pageQuery = graphql`
         subtitle
         date(formatString: "MMMM DD, YYYY")
         description
-        thumbnail
-        model
-        style
-        tags
-      }
-      fields {
         image {
           childImageSharp {
             sizes(maxWidth: 1920) {
@@ -80,6 +75,11 @@ export const pageQuery = graphql`
             }
           }
         }
+        model
+        style
+        tags
+      }
+      fields {
         slug
       }
     }

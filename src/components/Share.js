@@ -1,50 +1,115 @@
+import { graphql, useStaticQuery } from 'gatsby'
+import _ from 'lodash'
+import PropTypes from 'prop-types'
 import React from 'react'
+import styled from 'styled-components'
+import { AwesomeButton } from 'react-awesome-button'
 
-export default props => (
-  <div className={`Share ` + (props.fixed ? 'Share--fixed' : '') + (props.show ? '' : ' hide')}>
-    <a
-      className="Share__iconwrapper twitter"
-      href={`https://twitter.com/intent/tweet?text=${props.title} by Pierre Le Guen(@Pierre_Le_Guen) ${props.url}`}
-      target="_blank"
-      rel="noopener noreferrer"
-      data-size="large"
-    >
-      <img
-        alt="img"
-        className="Share__icon"
+const Button = styled(AwesomeButton)`
+  margin: 14px 3px !important;
+  border: 0 !important;
+  .aws-btn__content {
+    padding: 0 14px !important;
+    & > span {
+      height: 100%;
+    }
+  }
+  img {
+    width: 22px;
+    height: 88%;
+    margin: 0;
+    border: 0px solid !important;
+    position: relative;
+    top: 2px;
+  }
+`
+
+const Container = styled.div`
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  justify-content: center;
+`
+
+const ShareTitle = styled.span`
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 0;
+  margin-bottom: 20px;
+`
+
+const Share = ({ title, path }) => {
+  const { siteUrl } = _.get(
+    useStaticQuery(graphql`
+      query ShareComponentQuery {
+        site {
+          siteMetadata {
+            siteUrl
+          }
+        }
+      }
+    `),
+    'site.siteMetadata'
+  )
+
+  const url = `${siteUrl}/${path}`
+
+  return (
+    <Container>
+      <ShareTitle>Share it:</ShareTitle>
+      <Button
+        type="twitter"
+        size="small"
+        href={`https://twitter.com/intent/tweet?text=${title} by Dante Calderón(@dantehemerson) ${url}`}
         title="Share on Twitter"
-        src="https://icongr.am/fontawesome/twitter.svg?color=ffffff"
-      />
-    </a>
-    <a
-      className="Share__iconwrapper facebook"
-      href={`https://www.facebook.com/sharer/sharer.php?
-				app_id=2209722672595950
-				&sdk=joey
-				&u=${props.url}`}
-      target="_blank"
-      rel="noopener noreferrer"
-      title={props.title}
-    >
-      <img
-        alt="img"
-        className="Share__icon"
+        target="_blank"
+      >
+        <img
+          src="https://icongr.am/fontawesome/twitter.svg?color=ffffff"
+          title="Share on Twitter"
+          alt="img"
+        />
+      </Button>
+      <Button
+        type="facebook"
+        size="small"
+        href={`https://www.facebook.com/sharer/sharer.php?app_id=2209722672595950&sdk=joey&u=${url}`}
         title="Share on Facebook"
-        src="https://icongr.am/fontawesome/facebook.svg?color=ffffff"
-      />
-    </a>
-    <a
-      className="Share__iconwrapper linkedin"
-      href={`http://www.linkedin.com/shareArticle?url=${props.url}&isFramed=true&lang=es_ES`}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img
-        alt="img"
-        className="Share__icon"
+        target="_blank"
+      >
+        <img
+          src="https://icongr.am/fontawesome/facebook.svg?color=ffffff"
+          title="Share on Facebook"
+          alt="img"
+        />
+      </Button>
+
+      <Button
+        type="linkedin"
+        size="small"
+        href={`http://www.linkedin.com/shareArticle?url=${url}&isFramed=true`}
         title="Share on Linkedin"
-        src="https://icongr.am/fontawesome/linkedin.svg?color=ffffff"
-      />
-    </a>
-  </div>
-)
+        target="_blank"
+      >
+        <img
+          src="https://icongr.am/fontawesome/linkedin.svg?color=ffffff"
+          title="Share on Linkedin"
+          alt="img"
+        />
+      </Button>
+    </Container>
+  )
+}
+
+Share.propTypes = {
+  title: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired
+}
+
+export default Share

@@ -2,6 +2,7 @@ import { createGlobalStyle, css } from 'styled-components'
 import sliderStyles from './slider'
 import constants from './constants'
 import prismStyles from './prism'
+import socialColors from './social-colors'
 import { withPrefix } from 'gatsby'
 
 const sizes = {
@@ -45,6 +46,7 @@ export const defaultTheme = {
 
 export const GlobalStyles = createGlobalStyle`
   ${prismStyles}
+  ${socialColors}
   body {
     margin: 0 !important;
     padding: 0 !important;
@@ -124,14 +126,11 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-  .Disqus {
-    max-width: 760px !important;
-    min-height: 300px;
-    padding-top: 25px;
-    #disqus_thread a { // Theme color disqus.
+
+  #disqus_thread a { // Theme color disqus.
       color: #1976d2;
-    }
   }
+  
 
 	textarea{
       resize: vertical;
@@ -161,6 +160,9 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
+  img.medium-zoom-image--opened {
+    border: 1px solid #eee;
+  }
   ${sliderStyles}
 
   // POST STYLES
@@ -184,7 +186,6 @@ export const GlobalStyles = createGlobalStyle`
 
 
 
-
   // CODE STYLES
   code {
     -moz-tab-size:    2 !important;
@@ -198,7 +199,7 @@ export const GlobalStyles = createGlobalStyle`
       position: relative;
       padding: 0 6px !important;
       color: inherit !important;
-      border: 1px solid #dbe3e7 !important;
+      border: 1px solid #acd1ff !important;
       background: #ecf4fc !important;
     }
   }
@@ -228,7 +229,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   div.gatsby-highlight {
-    margin-bottom: 15px;
+    margin-bottom: 27px;
   }
 
   .gatsby-highlight pre[class*="language-"] {
@@ -248,11 +249,9 @@ export const GlobalStyles = createGlobalStyle`
   .gatsby-highlight {
     background: #2e2e2e;
     border-radius: 0px;
-    ${
-  media.md`
+    ${media.md`
         border-radius: 5px;
-      `
-  }
+      `}
     padding: 0.6em 0.7em;
     overflow: auto;
   }
@@ -272,31 +271,6 @@ export const GlobalStyles = createGlobalStyle`
     background: #717171;
   }
 
-
-
-  .twitter--hover:hover {
-    background: #00aced !important;
-  }
-
-  .github--hover:hover {
-    background: #333 !important;
-  }
-
-  .instagram--hover:hover {
-    background: #966842 !important;
-  }
-
-  .linkedin--hover:hover {
-    background: #0077b5 !important;
-  }
-
-  .medium--hover:hover {
-    background: #0bdc6d !important;
-  }
-
-  .dev--hover:hover {
-    background: white !important;
-  }
   .icon_svg {
   width: 21px;
   height: 21px;
@@ -377,6 +351,20 @@ export const GlobalStyles = createGlobalStyle`
   }
 }
 
+p.para {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.para::first-letter {
+  float: left;
+  font-size: 328%;
+  height: 0.7em;
+  line-height: 0.85em;
+  margin: 0 0 -5px;
+  padding: 0 0.08em 0 0;
+}
+
 .gatsby-remark-code-title {
     margin: 0 auto;
     margin-bottom: -0.4em;
@@ -385,16 +373,34 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Fira Code', Consolas, monospace;
     background-color: #2d2d2d;
     color: #cacaca;
-    font-size: 10px;
+    font-size: 11px;
     border-bottom: 1px solid #464646;
     z-index: 0;
     position: relative;
-     ${
-  media.md`
+     ${media.md`
         border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-      `
-  }
+      `}
 }
 
+ // clases for mdx
+ .mdx-image-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  &.with-border {
+    .gatsby-resp-image-image {
+      border: 5px solid #3384a0;
+    }
+  }
+ }
+
+ section {
+  &.lisa {
+    background: #fafafa;
+    border: 1px solid #f3f3f3;
+  }
+  &.rayada {
+    background: white;
+  }
+ }
 `

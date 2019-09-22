@@ -12,6 +12,12 @@ class Index extends React.Component {
       <Layout location={this.props.location} active={pages.home}>
         <SEO title="" url={siteUrl} />
         <Header />
+        <div
+          style={{
+            background: '#22292c',
+            height: '200px'
+          }}
+        />
       </Layout>
     )
   }
