@@ -1,8 +1,8 @@
 {
-  "name": "dantecalderon",
-  "description": "This is my personal web. Dante Caderón",
+  "name": "pierreleguene",
+  "description": "This is my personal web. Pierre Le Guen",
   "version": "1.0.0",
-  "author": "Dante Calderón <mail@dantecalderon.dev>",
+  "author": "Pierre Le Guen <pierre@leguen.fr>",
   "dependencies": {
     "@mdx-js/mdx": "1.4.4",
     "@mdx-js/react": "1.4.4",
