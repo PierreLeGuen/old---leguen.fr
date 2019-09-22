@@ -49,7 +49,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-embed-gist',
             options: {
-              username: 'dantehemerson',
+              username: 'pierreleguen',
               includeDefaultCss: true
             }
           },
@@ -106,7 +106,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-embed-gist',
             options: {
-              username: 'dantehemerson',
+              username: 'pierreleguen',
               includeDefaultCss: true
             }
           },
@@ -195,8 +195,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Dante Calderón',
-        short_name: 'Dante C.',
+        name: 'Pierre Le Guen',
+        short_name: 'Pierre LG',
         start_url: '/',
         icon: 'src/assets/images/logo.png',
         background_color: '#E1524A',
