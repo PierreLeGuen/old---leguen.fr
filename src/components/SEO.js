@@ -13,27 +13,25 @@ export default class SEO extends PureComponent {
   }
 
   static defaultProps = {
-    title: 'Dante Calderon',
-    image: `https://dantecalderon.dev${avatar}`,
-    url: 'https://dantecalderon.dev/',
-    description: 'Dante Calderon - Backend Nodejs Developer',
+    title: 'Pierre Le Guen',
+    image: `https://leguen.fr${avatar}`,
+    url: 'https://leguen.fr/',
+    description: 'Pierre Le Guen - Student, Freelancer & Software Developer',
     isPost: false
   }
 
   render() {
     const { image, url, description, isPost } = this.props
-    const title = (this.props.title === '' ? '' : `${this.props.title} · `) + 'Dante Calderon'
+    const title = (this.props.title === '' ? '' : `${this.props.title} · `) + 'Pierre Le Guen'
     const schemaOrgJSONLD = [
       {
         '@context': 'http://schema.org',
         '@type': 'WebSite',
         sameAs: [
-          'https://twitter.com/dantehemerson',
-          'https://www.facebook.com/Dante-Calder%C3%B3n-600909820246917/',
-          'https://plus.google.com/u/0/101542534057875808813',
-          'https://www.instagram.com/dantehemerson',
-          'https://www.github.com/dantehemerson',
-          'https://www.linkedin.com/in/dantehemerson'
+          'https://twitter.com/Pierre_Le_Guen',
+          'https://www.github.com/PierreLeGuen',
+          'https://www.linkedin.com/in/pierre-le-guen',
+          'https://www.gitlab.com/pleguen'
         ],
         url: url,
         name: title,
@@ -47,12 +45,10 @@ export default class SEO extends PureComponent {
           '@context': 'http://schema.org',
           '@type': 'BreadcrumbList',
           sameAs: [
-            'https://twitter.com/dantehemerson',
-            'https://www.facebook.com/Dante-Calder%C3%B3n-600909820246917/',
-            'https://plus.google.com/u/0/101542534057875808813',
-            'https://www.instagram.com/dantehemerson',
-            'https://www.github.com/dantehemerson',
-            'https://www.linkedin.com/in/dantehemerson'
+            'https://twitter.com/Pierre_Le_Guen',
+            'https://www.github.com/PierreLeGuen',
+            'https://www.linkedin.com/in/pierre-le-guen',
+            'https://www.gitlab.com/pleguen'
           ],
           itemListElement: [
             {
@@ -70,16 +66,14 @@ export default class SEO extends PureComponent {
           '@context': 'http://schema.org',
           '@type': 'BlogPosting',
           sameAs: [
-            'https://twitter.com/dantehemerson',
-            'https://www.facebook.com/Dante-Calder%C3%B3n-600909820246917/',
-            'https://plus.google.com/u/0/101542534057875808813',
-            'https://www.instagram.com/dantehemerson',
-            'https://www.github.com/dantehemerson',
-            'https://www.linkedin.com/in/dantehemerson'
+            'https://twitter.com/Pierre_Le_Guen',
+            'https://www.github.com/PierreLeGuen',
+            'https://www.linkedin.com/in/pierre-le-guen',
+            'https://www.gitlab.com/pleguen'
           ],
           url: url,
           name: title,
-          alternateName: `${url} | Dante Calderon`,
+          alternateName: `${url} | Pierre Le Guen`,
           headline: title,
           image: {
             '@type': 'ImageObject',

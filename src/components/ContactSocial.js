@@ -40,7 +40,7 @@ const ContactSocial = () => {
               github
               twitter
               linkedin
-              instagram
+              gitlab
             }
           }
         }
@@ -91,15 +91,15 @@ const ContactSocial = () => {
         />
       </Button>
       <Button
-        type="instagram"
+        type="gitlab"
         size="small"
-        href={socials.instagram}
-        title={`Instagram - ${title}`}
+        href={socials.gitlab}
+        title={`gitlab - ${title}`}
         target="_blank"
       >
         <img
-          src="https://icongr.am/fontawesome/instagram.svg?color=ffffff"
-          title={`Instagram - ${title}`}
+          src="https://icongr.am/fontawesome/gitlab.svg?color=ffffff"
+          title={`Gitlab - ${title}`}
           alt="img"
         />
       </Button>

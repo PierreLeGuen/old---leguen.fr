@@ -87,7 +87,7 @@ export default props => (
     <Image sizes={props.avatar.sizes} />
     <Body>
       <Name>
-        <Author to="/about">Dante Calderón</Author> <b>|</b>{' '}
+        <Author to="/about">Pierre Le Guen</Author> <b>|</b>{' '}
         <span>
           {props.date} · {props.timeToRead} min read
         </span>

@@ -66,7 +66,7 @@ const Share = ({ title, path }) => {
       <Button
         type="twitter"
         size="small"
-        href={`https://twitter.com/intent/tweet?text=${title} by Dante Calderón(@dantehemerson) ${url}`}
+        href={`https://twitter.com/intent/tweet?text=${title} by Pierre Le Guen(@Pierre_Le_Guen) ${url}`}
         title="Share on Twitter"
         target="_blank"
       >
