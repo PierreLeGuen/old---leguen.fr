@@ -203,6 +203,13 @@ module.exports = {
         theme_color: '#000',
         display: 'standalone'
       }
+    },
+    'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: process.env.MAILCHIMP_LIST || ''
+      }
     }
   ]
 }

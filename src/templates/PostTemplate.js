@@ -4,6 +4,7 @@ import React from 'react'
 import Markdown from '../components/Markdown'
 import PostHeader from '../components/PostHeader'
 import Share from '../components/Share'
+import SubscribeForm from '../components/SubscribeForm'
 import TagsSection from '../components/TagsSection'
 import { getLinkEditPost } from '../utils'
 import Layout from './TemplateLayout'
@@ -38,6 +39,7 @@ export default class BlogPostTemplate extends React.Component {
         />
         <TagsSection tags={tags} />
         <Share title={title} path={slug} />
+        <SubscribeForm />
       </Layout>
     )
   }
