@@ -164,8 +164,8 @@ module.exports = {
         head: false,
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: 'dantecalderon.dev',
-        cookieName: 'gaDanteCalderon',
+        cookieDomain: 'pleguen.fr',
+        cookieName: 'gaPierreLeGuen',
         cookieExpires: 86400
       }
     },

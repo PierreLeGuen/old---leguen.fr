@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: dantehemerson/dantecalderon.dev
+  repo: pierreleguen/leguen.fr
 
 media_folder: content/images
 public_folder: /images
