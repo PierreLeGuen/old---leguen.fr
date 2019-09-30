@@ -156,13 +156,13 @@ $font-color: rgba(0, 0, 0, 0.88);
       }
     }
     @include rotationalItem(hacker, 45deg, 'icons/linux-original.svg');
-    @include rotationalItem(protection, 90deg, 'icons/algorithm.svg');
-    @include rotationalItem(server, 135deg, 'icons/spotify.svg');
-    @include rotationalItem(www, 180deg, 'icons/coffee.svg');
+    @include rotationalItem(protection, 90deg, 'icons/docker.svg');
+    @include rotationalItem(server, 135deg, 'icons/kubernetes.svg');
+    @include rotationalItem(www, 180deg, 'icons/go.svg');
     @include rotationalItem(browser, 225deg, 'icons/idea.svg');
     @include rotationalItem(computer, 270deg, 'icons/laptop-2.png');
     @include rotationalItem(laptop, 315deg, 'icons/books.svg');
-    @include rotationalItem(headphones, 360deg, 'icons/machine-learning.svg');
+    @include rotationalItem(headphones, 360deg, 'icons/vscode.svg');
   }
 
   &__avatar-container {
