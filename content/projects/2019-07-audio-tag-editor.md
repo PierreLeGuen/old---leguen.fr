@@ -1,10 +1,10 @@
 ---
 model: project
-title: Audio Tag Editor
-subtitle: The simplest tag editor for mp3 files.
-description: Mp3 Tag Editor
-path: audio-tag-editor
-image: ../images/audio_tag_editor02.png
+title: Lorem ipsum
+subtitle: Lorem ipsum
+description: Lorem ipsum
+path: project-lorem
+thumbnail: /images/screenshot_2019-03-17_11-15-36.png
 images:
   - description: Upload file
     image: ../images/audio_tag_editor03.png
@@ -12,7 +12,7 @@ images:
     image: ../images/audio_tag_editor02.png
   - description: Download
     image: ../images/audio_tag_editor01.png
-date: 2019-29-08T20:32:07.279Z
+date: 2021-05-08T20:32:07.279Z
 finished: true
 published: true
 style: default
@@ -31,8 +31,8 @@ stack:
   - GraphQL
   - Github
 client: Personal
-repository: 'https://github.com/dantehemerson/audio-tag-editor'
+repository: 'https://github.com/pierreleguen'
 licence: MIT
-website: 'https://audiotag-editor.netlify.com'
+website: www.leguen.fr
 ---
-A simple tag editor for **.mp3** files, so enjoy it.
+Lorem ipsum 
