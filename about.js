@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Pierre Le Guen',
-    subtitle: 'Student, Freelancer & Software Developer',
+    subtitle: 'Student, Freelancer & Software Engineer',
     description: `Hi, I'm Pierre Le Guen, I am passionate about ....`,
     siteUrl: 'https://leguen.fr',
     disqusShortname: 'leguen',
