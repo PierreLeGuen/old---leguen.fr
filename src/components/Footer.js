@@ -90,7 +90,10 @@ export default props => (
           <span className="heart">❤</span> by{' '}
           <Link to="/about" target="_blank" rel="noopener noreferrer">
             {data.site.siteMetadata.title}
-          </Link>
+          </Link>{' & '}
+          <a href="https://github.com/dantehemerson">
+            dantehemerson
+          </a>
         </Copy>
       </Container>
     )}
