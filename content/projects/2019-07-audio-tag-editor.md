@@ -4,7 +4,7 @@ title: Lorem ipsum
 subtitle: Lorem ipsum
 description: Lorem ipsum
 path: project-lorem
-thumbnail: /images/screenshot_2019-03-17_11-15-36.png
+image: ../images/screenshot_2019-03-17_11-15-36.png
 images:
   - description: Upload file
     image: ../images/audio_tag_editor03.png
