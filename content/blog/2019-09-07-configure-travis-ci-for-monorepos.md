@@ -1,13 +1,14 @@
 ---
 model: post
-title: Hello world!
-description: This is a simple hello world post
-path: hello-world-leguen
-thumbnail: /images/0_733pce3vafdi88jv.jpeg
+title: Hello world
+description: >-
+  Los repositorios multiproyectos o monorepos es una forma de organizar nuestro proyecto de tal forma que contenga múltiples subproyectos y sean sea controlados por un solo repositorio de un Sistema de Control de Versiones como Git por ejemplo.
+author: Dante Calderón
+path: configure-travis-ci-for-monorepos
+image: ../images/travis_ci_subdirs.jpg
 date: '2019-09-07T13:10:52-05:00'
 published: true
-style: default
 tags:
-  - Hello World
+  - Hello world
 ---
 Hello world !
