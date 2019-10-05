@@ -44,18 +44,10 @@ collections:
       - { label: Date, name: date, widget: datetime }
       - { label: Finished, name: finished, widget: boolean, default: true }
       - { label: Published, name: published, widget: boolean, default: true }
-      - {
-          label: 'Header Style',
-          name: style,
-          widget: select,
-          options: ['default', 'normal-img', 'medium-img', 'full-image', 'doble-column'],
-          default: default,
-        }
-      - { label: Tags (Separar con comas), name: tags, widget: list }
+      - { label: Tags, name: tags, widget: list }
 
-      # Datos propios de un proyecto
       - { label: Roles (Separar con comas), name: roles, widget: list }
-      - { label: Stack (Separar con comas), name: stack, widget: list }
+      - { label: Stack, name: stack, widget: list }
       - { label: Client, name: 'client', widget: string, default: Personal }
       - { label: Repository, name: 'repository', widget: string, required: false }
       - { label: Licence, name: licence, widget: string, default: MIT }

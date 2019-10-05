@@ -147,7 +147,7 @@ export default props => (
         {props.client}
       </Item>
     </List>
-    <Title>Stack</Title>
+    <Title>Technologies</Title>
     <Stack items={props.stack} />
     <Title>Tags</Title>
     <Tags items={props.tags} />
