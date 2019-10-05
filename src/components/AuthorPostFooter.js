@@ -84,7 +84,7 @@ export default props => (
       <By>{props.make ? 'Made with ❤' : 'Written'} by</By>
       <Name to="/about">Pierre Le Guen</Name>
       <About>
-        Hi, I'm Pierre Le Guen, web developer. Click{' '}
+        Hi, I'm Pierre Le Guen, graduate student in computer science. Click{' '}
         <Link className="default" to="/about">
           here
         </Link>{' '}
