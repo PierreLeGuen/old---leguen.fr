@@ -4,7 +4,7 @@ title: Fix HP Spectre 13 not going to sleep mode.
 description: How to fix HP Spectre 13 (v001nf) not going to sleep/hibernate mode on Linux.
 author: Pierre Le Guen
 path: fix-hp-spectre-13-sleep
-image: /images/fix-hp-spectre.jpg
+image: ../images/fix-hp-spectre.jpg
 date: 2019-10-05T18:14:00.377Z
 published: true
 tags:
