@@ -20,14 +20,7 @@ collections:
       - { label: 'Featured Image', name: image, widget: image }
       - { label: Date, name: date, widget: datetime }
       - { label: Published, name: published, widget: boolean, default: true }
-      - {
-          label: 'Header Style',
-          name: style,
-          widget: select,
-          options: ['default', 'normal-img', 'medium-img', 'full-image', 'doble-column'],
-          default: default,
-        }
-      - { label: Tags (Separar con comas), name: tags, widget: list }
+      - { label: Tags, name: tags, widget: list }
       - { label: Body, name: body, widget: markdown }
 
   - name: portfolio
