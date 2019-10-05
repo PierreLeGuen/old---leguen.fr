@@ -15,8 +15,9 @@ collections:
       - { label: Model, name: model, widget: hidden, default: post }
       - { label: Title, name: title }
       - { label: Description, name: description, widget: text }
+      - { label: Author, name: author, widget: text, default: Pierre Le Guen}
       - { label: Path, name: path }
-      - { label: 'Featured Image', name: thumbnail, widget: image }
+      - { label: 'Featured Image', name: image, widget: image }
       - { label: Date, name: date, widget: datetime }
       - { label: Published, name: published, widget: boolean, default: true }
       - {
@@ -40,7 +41,7 @@ collections:
       - { label: Subtitle, name: subtitle }
       - { label: Description, name: description, widget: text }
       - { label: Path, name: path }
-      - { label: 'Featured Image', name: thumbnail, widget: image }
+      - { label: 'Featured Image', name: image, widget: image }
       - {
           label: Images,
           name: images,
