@@ -4,10 +4,10 @@ title: 'Freelance: L''Équilibre website'
 subtitle: One website I've done for a client in freelance.
 description: One website I've done for a client in freelance.
 path: lequilibre-freelance-website
-image: /images/lequilibre.png
+image: ../images/lequilibre.png
 images:
   - description: 'https://www.lequilibre-coaching.fr/'
-    image: /images/lequilibre.png
+    image: ../images/lequilibre.png
 date: 2019-10-08T21:27:20.727Z
 finished: true
 published: true
