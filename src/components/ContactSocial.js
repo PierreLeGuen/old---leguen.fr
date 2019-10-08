@@ -91,7 +91,7 @@ const ContactSocial = () => {
         />
       </Button>
       <Button
-        type="gitlab"
+        type="github"
         size="small"
         href={socials.gitlab}
         title={`gitlab - ${title}`}

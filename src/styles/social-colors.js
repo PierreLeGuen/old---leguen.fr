@@ -41,6 +41,14 @@ export default css`
     }
   }
 
+  .gitlab-color {
+    background: #0077b5;
+    transition: 0.3s;
+    &--hover-shadow:hover {
+      background: #0070ab;
+    }
+  }
+
   .twitter--hover:hover {
     background: #00aced !important;
   }
@@ -54,6 +62,10 @@ export default css`
   }
 
   .linkedin--hover:hover {
+    background: #0077b5 !important;
+  }
+
+  .gitlab--hover:hover {
     background: #0077b5 !important;
   }
 

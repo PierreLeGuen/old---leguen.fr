@@ -76,7 +76,6 @@ export const pageQuery = graphql`
           }
         }
         model
-        style
         tags
       }
       fields {
