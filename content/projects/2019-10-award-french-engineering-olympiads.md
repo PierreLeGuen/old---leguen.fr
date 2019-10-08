@@ -22,6 +22,7 @@ roles:
   - Designer
   - Leader
 stack:
+  - Python
   - HTML
   - CSS
   - JS
@@ -30,4 +31,6 @@ stack:
 client: Personal
 licence: MIT
 ---
-Headed and created a project about an autonomous self powered food station. This system is especially designed for field horses. It allows you to monitor and feed your horses remotely. The station is powered by a solar panel and a battery.  
+Headed and created a project about an autonomous self powered food station. This system is especially designed for field horses. It allows you to monitor and feed your horses remotely. 
+
+The station is powered by a solar panel and a battery. Raspberry PI takes care of the website, the cameras and the food delivery system. The website to control and monitor is written in JS and PHP. Python is used to manage the hardware (food delivery system & cameras).
