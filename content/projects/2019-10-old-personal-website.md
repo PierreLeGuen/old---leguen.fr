@@ -6,10 +6,10 @@ description: >-
   Built a one-page resume website, including education, work experiences and my
   hobbies.
 path: old-le-guen-website
-image: /images/old_le-guen.jpg
+image: ../images/old_le-guen.jpg
 images:
   - description: Main screen of my old website.
-    image: /images/old_le-guen.jpg
+    image: ../images/old_le-guen.jpg
 date: 2019-10-08T20:34:39.533Z
 finished: true
 published: true
