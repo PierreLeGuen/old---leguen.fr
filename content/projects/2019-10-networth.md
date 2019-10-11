@@ -25,8 +25,10 @@ stack:
 client: Personal
 licence: MIT
 ---
-Program written in C. The main goal of this project was to learn the basic functionalities of networks. This application allows you to perform basic actions on a network, including: 
+The main goal of this project was to learn the basic functionalities of networks. This application allows you to perform basic actions on a network, including: 
 * CRC to check the integrity of messages;
 * Discovery of new hosts;
 * Broadcast messages;
 * 1 to 1 messages.
+
+Program written in C. 
