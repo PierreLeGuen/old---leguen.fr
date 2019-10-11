@@ -8,14 +8,14 @@ module.exports = {
     social: [
       { title: 'Github', link: 'https://github.com/pierreleguen', icon: 'github' },
       { title: 'Twitter', link: 'https://twitter.com/Pierre_Le_Guen', icon: 'twitter' },
-      { title: 'Linkedin', link: 'https://linkedin.com/in/pierreleguen', icon: 'linkedin' },
+      { title: 'Linkedin', link: 'https://linkedin.com/in/pierre-le-guen', icon: 'linkedin' },
       //{ title: 'Medium', link: 'https://medium.com/@pierreeguen', icon: 'medium' },
       { title: 'Gitlab', link: 'https://gitlab.com/pleguen', icon: 'gitlab' }
     ],
     socials: {
       github: 'https://github.com/pierreleguen',
       twitter: 'https://twitter.com/Pierre_Le_Guen',
-      linkedin: 'https://linkedin.com/in/pierreleguen',
+      linkedin: 'https://linkedin.com/in/pierre-le-guen',
       gitlab: 'https://gitlab.com/pleguen'
     },
     menu: [
