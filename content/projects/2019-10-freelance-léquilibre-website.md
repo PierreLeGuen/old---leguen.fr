@@ -1,7 +1,7 @@
 ---
 model: project
 title: 'Freelance: L''Équilibre website'
-subtitle: One website I've done for a client in freelance.
+subtitle: Website done for a client in freelance.
 description: One website I've done for a client in freelance.
 path: lequilibre-freelance-website
 image: ../images/lequilibre.png

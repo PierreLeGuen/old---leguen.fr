@@ -1,7 +1,7 @@
 ---
 model: project
-title: 'Award : French Engineering Olympiads'
-subtitle: 'Awarded project : an autonomous self powered food station.'
+title: 'Award: French Engineering Olympiads'
+subtitle: 'An autonomous self powered food station.'
 description: >-
   Awarded project an utonomous self powered food station.
 path: award-french-engineering-olympiads
