@@ -5,10 +5,10 @@ subtitle: 'My personal website, made with ReactJS & GatsbyJS'
 description: >-
   My personal website, made with ReactJS & GatsbyJS
 path: swna-verifresh
-image: ../images/verifresh.png
+image: ../images/verifresh.jpg
 images:
   - description: Verifresh homepage.
-    image: ../images/verifresh.png
+    image: ../images/verifresh.jpg
 date: 2019-10-08T20:34:39.533Z
 finished: true
 published: true
