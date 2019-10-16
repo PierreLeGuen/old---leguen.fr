@@ -164,8 +164,8 @@ module.exports = {
         head: false,
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: 'pleguen.fr',
-        cookieName: 'gaPierreLeGuen',
+        cookieDomain: 'leguen.fr',
+        cookieName: 'gaLeGuen',
         cookieExpires: 86400
       }
     },
