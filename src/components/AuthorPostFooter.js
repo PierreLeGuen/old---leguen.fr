@@ -81,16 +81,16 @@ export default props => (
       <Image sizes={props.avatar.sizes} />
     </div>
     <Body>
-      <By>{props.make ? 'Made with ❤' : 'Written'} by</By>
+      <By>{props.make ? 'Made' : 'Written'} by</By>
       <Name to="/about">Pierre Le Guen</Name>
       <About>
-        Hi, I'm Pierre Le Guen, graduate student in computer science. Click{' '}
+        Hi, I'm Pierre Le Guen, student in computer science. Click{' '}
         <Link className="default" to="/about">
           here
         </Link>{' '}
         if you want know more about me or checkout my{' '}
         <Link className="default" to="/portfolio">
-          portafolio
+          portofolio
         </Link>
         .
       </About>
