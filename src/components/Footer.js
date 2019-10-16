@@ -86,8 +86,7 @@ export default props => (
           ))}
         </Social>
         <Copy>
-          <span className="copytext">© {new Date().getFullYear()} - All rights reserved.</span> Made with{' '}
-          <span className="heart">❤</span> by{' '}
+          <span className="copytext">© {new Date().getFullYear()} - All rights reserved.</span> Made by{' '}
           <Link to="/about" target="_blank" rel="noopener noreferrer">
             {data.site.siteMetadata.title}
           </Link>{' & '}
