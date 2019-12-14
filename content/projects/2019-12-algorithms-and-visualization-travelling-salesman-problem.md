@@ -3,8 +3,8 @@ model: project
 title: 'Algorithms and visualization: Travelling Salesman Problem '
 subtitle: Comparing and visualizing different hereustics for the TSP.
 description: Comparing and visualizing different hereustics for the TSP.
-path: /tsp-heuristics
-image: /images/uruguay.gif
+path: tsp-heuristics
+image: ../images/uruguay.gif
 date: 2019-12-14T14:05:20.302Z
 finished: true
 published: true
